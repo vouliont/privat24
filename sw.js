@@ -8,21 +8,21 @@ const CACHE_NAME = "v1.2.0"
 this.addEventListener('install', async function() {
     const cache = await caches.open(CACHE_NAME);
     return cache.addAll([
-        '/',
-        '/index.html',
-        '/main.js',
-        '/css/style.css',
-        '/css/configuration.css',
-        '/css/emulation.css',
-        '/images/company.jpg',
-        '/images/ticket.jpg',
-        '/images/ticket-bus.jpg',
-        '/images/left-arrow.svg',
+        './',
+        './index.html',
+        './main-support.js',
+        './css/style.css',
+        './css/configuration.css',
+        './css/emulation.css',
+        './images/company.jpg',
+        './images/ticket.jpg',
+        './images/ticket-bus.jpg',
+        './images/left-arrow.svg',
     ])
 })
 
 /**
- * The fetch event is fired every time the browser sends a request. 
+ * The fetch event is fired every time the browser sends a request.
  * In this case, the service worker acts as a proxy. We can for example return the cached
  * version of the ressource matching the request, or send the request to the internet
  * , we can even make our own response from scratch !
